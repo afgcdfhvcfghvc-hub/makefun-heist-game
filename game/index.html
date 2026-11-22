@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Marlowe Heist — a top-down stealth game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0c0a08;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+  #wrap { text-align: center; }
+  canvas {
+    display: block;
+    background: #14100c;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+  }
+  #hint {
+    color: #9a8d74;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  #hint b { color: #e8ddc4; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game"></canvas>
+  <div id="hint"><b>WASD</b> move &nbsp;·&nbsp; <b>Shift</b> sneak &nbsp;·&nbsp; <b>1</b> smoke &nbsp;·&nbsp; <b>2</b> EMP &nbsp;·&nbsp; <b>3</b> coin &nbsp;·&nbsp; <b>M</b> mute</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
